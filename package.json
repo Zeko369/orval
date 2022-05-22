@@ -1,5 +1,5 @@
 {
-  "name": "orval",
+  "name": "zeko369-fork-orval",
   "description": "A swagger client generator for typescript",
   "version": "6.9.0",
   "license": "MIT",
@@ -49,7 +49,7 @@
     "format:staged": "pretty-quick --staged",
     "prerelease": "yarn build && cd ./tests && yarn generate && yarn build",
     "release": "dotenv release-it",
-    "postrelease": "yarn build && yarn update-samples",
+    "postrelease": "yarn build",
     "generate-api": "node ./dist/bin/orval.js --config ./samples/react-query/basic/orval.config.ts --watch",
     "prepare": "husky install && cd ./samples/react-query/basic && yarn",
     "commitlint": "commitlint",
